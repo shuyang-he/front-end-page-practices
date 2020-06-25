@@ -5,67 +5,83 @@ body {
 }
 
 #root {
+  margin: auto;
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 }
 
 #top {
   height: 100%;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   flex-basis: 20%;
-  flex-grow: 1;
+  background-color: lightgray;
 }
 
 #whiteboard {
   height: 100%;
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   flex-basis: 70%;
-  flex-grow: 1;
 }
 
 #sidebar {
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   flex-basis: 20%;
-  flex-grow: 1;
+  background-color: lightgray;
 }
 
 #content {
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   flex-basis: 70%;
-  flex-grow: 1;
 }
 
 #body {
   height: 100%;
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   flex-basis: 70%;
-  flex-grow: 1;
 }
 
 #main {
   height: 100%;
   display: flex;
   flex-direction: column;
+  flex-basis: 70%;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
 }
 
 #right {
   height: 100%;
   display: flex;
   flex-direction: column;
+  flex-basis: 20%;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
 }
 
 #footer {
   height: 100%;
   display: flex;
   flex-direction: row;
-  flex-basis: 70%;
-  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 20%;
+  background-color: lightgray;
 }
