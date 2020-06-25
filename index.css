@@ -1,0 +1,71 @@
+body {
+  margin: auto;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+#root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#top {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-basis: 20%;
+  flex-grow: 1;
+}
+
+#whiteboard {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-basis: 70%;
+  flex-grow: 1;
+}
+
+#sidebar {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 20%;
+  flex-grow: 1;
+}
+
+#content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 70%;
+  flex-grow: 1;
+}
+
+#body {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-basis: 70%;
+  flex-grow: 1;
+}
+
+#main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#right {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#footer {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-basis: 70%;
+  flex-grow: 1;
+}
