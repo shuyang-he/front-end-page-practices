@@ -5,83 +5,58 @@ body {
 }
 
 #root {
-  margin: auto;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas:
+    "top top top top top"
+    "sidebar main main main right"
+    "sidebar main main main right"
+    "sidebar main main main right"
+    "sidebar footer footer footer footer";
+  column-gap: 10pt;
+  row-gap: 10pt;
+  justify-items: stretch;
+  align-items: stretch;
 }
 
 #top {
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  display: grid;
+  justify-items: center;
   align-items: center;
-  flex-basis: 20%;
+  grid-area: top;
   background-color: lightgray;
-}
-
-#whiteboard {
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-basis: 70%;
 }
 
 #sidebar {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
+  justify-items: center;
   align-items: center;
-  flex-basis: 20%;
+  grid-area: sidebar;
   background-color: lightgray;
 }
 
-#content {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  flex-basis: 70%;
-}
-
-#body {
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-basis: 70%;
-}
-
 #main {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-basis: 70%;
-  justify-content: center;
+  display: grid;
+  justify-items: center;
   align-items: center;
+  grid-area: main;
   background-color: lightgray;
 }
 
 #right {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-basis: 20%;
-  justify-content: center;
+  display: grid;
+  justify-items: center;
   align-items: center;
+  grid-area: right;
   background-color: lightgray;
 }
 
 #footer {
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  display: grid;
+  justify-items: center;
   align-items: center;
-  flex-basis: 20%;
+  grid-area: footer;
   background-color: lightgray;
 }
