@@ -5,58 +5,79 @@ body {
 }
 
 #root {
+  width: 100%;
   height: 100%;
-  display: grid;
-  grid-template-columns: auto auto auto auto auto;
-  grid-template-rows: auto auto auto auto auto;
-  grid-template-areas:
-    "top top top top top"
-    "sidebar main main main right"
-    "sidebar main main main right"
-    "sidebar main main main right"
-    "sidebar footer footer footer footer";
-  column-gap: 10pt;
-  row-gap: 10pt;
-  justify-items: stretch;
-  align-items: stretch;
+  display: block;
+  position: fixed;
+  top: 0%;
+  left: 0%;
 }
 
 #top {
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  grid-area: top;
+  width: 100%;
+  height: 15%;
+  display: block;
+  position: relative;
   background-color: lightgray;
+}
+
+#whiteboard {
+  width: 100%;
+  height: 80%;
+  display: block;
+  float: bottom;
 }
 
 #sidebar {
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  grid-area: sidebar;
+  width: 15%;
+  height: 100%;
+  display: block;
+  position: relative;
+  float: left;
   background-color: lightgray;
 }
 
+#content {
+  width: 80%;
+  height: 100%;
+  display: block;
+  float: right;
+}
+
+#body {
+  width: 100%;
+  height: 80%;
+  display: block;
+}
+
 #main {
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  grid-area: main;
+  width: 80%;
+  height: 100%;
+  display: block;
+  position: relative;
+  float: left;
   background-color: lightgray;
 }
 
 #right {
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  grid-area: right;
+  width: 15%;
+  height: 100%;
+  display: block;
+  position: relative;
+  float: right;
   background-color: lightgray;
 }
 
 #footer {
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  grid-area: footer;
+  width: 100%;
+  height: 15%;
+  display: block;
   background-color: lightgray;
+}
+
+span {
+  display: block;
+  position: relative;
+  top: 50%;
+  left: 50%;
 }
