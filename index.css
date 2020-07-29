@@ -7,26 +7,88 @@ body {
 #root {
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-#whiteboard {
+#whiteboard-1 {
+  width: 100%;
+  height: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#whiteboard a {
+#whiteboard-1 > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
   width: 100px;
-  height: 300px;
+}
+
+#whiteboard-2 {
+  width: 100%;
+  height: 100px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
 }
 
-#whiteboard div {
-  width: 100px;
-  height: 300px;
+#whiteboard-2 > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#whiteboard-3 {
+  width: 100%;
+  height: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+#whiteboard-3 > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#whiteboard-4 {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+#whiteboard-4 > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#table-1 td {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}
+
+#table-2 td {
+  width: 100px;
+  height: 100px;
+  text-align: center;
 }
